@@ -1,0 +1,175 @@
+<html>
+<head>
+  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    .contact-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+    }
+    .contact-card h3 {
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+    .contact-card p {
+      margin: 8px 0;
+    }
+    .contact-card a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .contact-card a:hover {
+      color: #e0e0e0;
+    }
+    .contact-icon {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+    .contact-info-section {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .contact-info-item {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+      padding: 10px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .contact-info-item img {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+    }
+    .contact-info-icon {
+      width: 50px;
+      height: 50px;
+      background-color: darkturquoise;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      color: white;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="card" style="width: 80%; margin: auto; margin-top: 5%;">
+    <div class="banner" name="contact-header">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you! Reach out to us through any of the following channels.</p>
+    </div>
+    
+    <div style="display: flex; flex-direction: row; margin: auto; flex-wrap: wrap; justify-content: center; padding: 20px;">
+      
+      <!-- Customer Service Card -->
+      <div class="card" style="width: 30%; min-width: 250px;">
+        <div class="contact-card">
+          <div class="contact-icon">📞</div>
+          <h3>Customer Service</h3>
+          <p><strong>Phone:</strong> 1-800-BEST-CAR</p>
+          <p><strong>Email:</strong> <a href="mailto:support@bestcars.com">support@bestcars.com</a></p>
+          <p><strong>Hours:</strong> Mon-Fri 9AM-6PM EST</p>
+        </div>
+      </div>
+
+      <!-- Sales Department Card -->
+      <div class="card" style="width: 30%; min-width: 250px;">
+        <div class="contact-card" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);">
+          <div class="contact-icon">🚗</div>
+          <h3>Sales Department</h3>
+          <p><strong>Phone:</strong> 1-800-555-SALE</p>
+          <p><strong>Email:</strong> <a href="mailto:sales@bestcars.com">sales@bestcars.com</a></p>
+          <p><strong>Hours:</strong> Mon-Sat 8AM-8PM EST</p>
+        </div>
+      </div>
+
+      <!-- Corporate Office Card -->
+      <div class="card" style="width: 30%; min-width: 250px;">
+        <div class="contact-card" style="background: linear-gradient(135deg, #fc4a1a 0%, #f7b733 100%);">
+          <div class="contact-icon">🏢</div>
+          <h3>Corporate Office</h3>
+          <p><strong>Address:</strong></p>
+          <p>123 Auto Drive</p>
+          <p>Detroit, MI 48201</p>
+          <p><strong>Phone:</strong> (313) 555-0100</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Additional Contact Information -->
+    <div class="contact-info-section" style="width: 90%; margin: auto; margin-bottom: 30px;">
+      <h3 style="text-align: center; margin-bottom: 20px;">Additional Ways to Reach Us</h3>
+      
+      <div class="contact-info-item">
+        <div class="contact-info-icon">✉️</div>
+        <div>
+          <strong>General Inquiries</strong><br>
+          <a href="mailto:info@bestcars.com">info@bestcars.com</a>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">🔧</div>
+        <div>
+          <strong>Service & Maintenance</strong><br>
+          <a href="mailto:service@bestcars.com">service@bestcars.com</a> | (313) 555-0150
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">💼</div>
+        <div>
+          <strong>Careers & Employment</strong><br>
+          <a href="mailto:careers@bestcars.com">careers@bestcars.com</a>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">📱</div>
+        <div>
+          <strong>Follow Us on Social Media</strong><br>
+          Facebook | Twitter | Instagram | LinkedIn - @BestCarsDealership
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
